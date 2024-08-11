@@ -1,0 +1,185 @@
+ERROR - 2023-06-12 13:26:05 --> mysqli_sql_exception: Unknown column 'mhsnobp' in 'where clause' in D:\Xampp 8.2\htdocs\ci4-apiserver\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\Xampp 8.2\htdocs\ci4-apiserver\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\Xampp 8.2\htdocs\ci4-apiserver\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\Xampp 8.2\htdocs\ci4-apiserver\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\Xampp 8.2\htdocs\ci4-apiserver\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\Xampp 8.2\htdocs\ci4-apiserver\system\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Xampp 8.2\htdocs\ci4-apiserver\app\Controllers\Mahasiswa.php(41): CodeIgniter\Model->__call('get', Array)
+#6 D:\Xampp 8.2\htdocs\ci4-apiserver\system\CodeIgniter.php(934): App\Controllers\Mahasiswa->show('002')
+#7 D:\Xampp 8.2\htdocs\ci4-apiserver\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+#8 D:\Xampp 8.2\htdocs\ci4-apiserver\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\Xampp 8.2\htdocs\ci4-apiserver\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-06-12 13:26:05 --> Unknown column 'mhsnobp' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `barang`
+WHERE `mhsnobp` LIKE \'%002%\' ESCAPE \'!\'
+OR  `mhsnama` LIKE \'%002%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `barang`
+WHERE `mhsnobp` LIKE \'%002%\' ESCAPE \'!\'
+OR  `mhsnama` LIKE \'%002%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `barang`
+WHERE `mhsnobp` LIKE \'%002%\' ESCAPE \'!\'
+OR  `mhsnama` LIKE \'%002%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `barang`
+WHERE `mhsnobp` LIKE :mhsnobp: ESCAPE \'!\'
+OR  `mhsnama` LIKE :mhsnama: ESCAPE \'!\'', [...], false)
+ 5 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Mahasiswa.php(41): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Mahasiswa->show('002')
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-12 13:27:31 --> mysqli_sql_exception: Unknown column 'mhsnobp' in 'where clause' in D:\Xampp 8.2\htdocs\ci4-apiserver\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\Xampp 8.2\htdocs\ci4-apiserver\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\Xampp 8.2\htdocs\ci4-apiserver\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\Xampp 8.2\htdocs\ci4-apiserver\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\Xampp 8.2\htdocs\ci4-apiserver\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\Xampp 8.2\htdocs\ci4-apiserver\system\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Xampp 8.2\htdocs\ci4-apiserver\app\Controllers\Mahasiswa.php(41): CodeIgniter\Model->__call('get', Array)
+#6 D:\Xampp 8.2\htdocs\ci4-apiserver\system\CodeIgniter.php(934): App\Controllers\Mahasiswa->show('001')
+#7 D:\Xampp 8.2\htdocs\ci4-apiserver\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+#8 D:\Xampp 8.2\htdocs\ci4-apiserver\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\Xampp 8.2\htdocs\ci4-apiserver\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-06-12 13:27:31 --> Unknown column 'mhsnobp' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `barang`
+WHERE `mhsnobp` LIKE \'%001%\' ESCAPE \'!\'
+OR  `mhsnama` LIKE \'%001%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `barang`
+WHERE `mhsnobp` LIKE \'%001%\' ESCAPE \'!\'
+OR  `mhsnama` LIKE \'%001%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `barang`
+WHERE `mhsnobp` LIKE \'%001%\' ESCAPE \'!\'
+OR  `mhsnama` LIKE \'%001%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `barang`
+WHERE `mhsnobp` LIKE :mhsnobp: ESCAPE \'!\'
+OR  `mhsnama` LIKE :mhsnama: ESCAPE \'!\'', [...], false)
+ 5 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Mahasiswa.php(41): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Mahasiswa->show('001')
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-12 13:28:38 --> mysqli_sql_exception: Unknown column 'mhsnobp' in 'where clause' in D:\Xampp 8.2\htdocs\ci4-apiserver\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\Xampp 8.2\htdocs\ci4-apiserver\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\Xampp 8.2\htdocs\ci4-apiserver\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\Xampp 8.2\htdocs\ci4-apiserver\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\Xampp 8.2\htdocs\ci4-apiserver\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\Xampp 8.2\htdocs\ci4-apiserver\system\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Xampp 8.2\htdocs\ci4-apiserver\app\Controllers\Mahasiswa.php(41): CodeIgniter\Model->__call('get', Array)
+#6 D:\Xampp 8.2\htdocs\ci4-apiserver\system\CodeIgniter.php(934): App\Controllers\Mahasiswa->show('002')
+#7 D:\Xampp 8.2\htdocs\ci4-apiserver\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+#8 D:\Xampp 8.2\htdocs\ci4-apiserver\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\Xampp 8.2\htdocs\ci4-apiserver\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-06-12 13:28:38 --> Unknown column 'mhsnobp' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `barang`
+WHERE `mhsnobp` LIKE \'%002%\' ESCAPE \'!\'
+OR  `mhsnama` LIKE \'%002%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `barang`
+WHERE `mhsnobp` LIKE \'%002%\' ESCAPE \'!\'
+OR  `mhsnama` LIKE \'%002%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `barang`
+WHERE `mhsnobp` LIKE \'%002%\' ESCAPE \'!\'
+OR  `mhsnama` LIKE \'%002%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `barang`
+WHERE `mhsnobp` LIKE :mhsnobp: ESCAPE \'!\'
+OR  `mhsnama` LIKE :mhsnama: ESCAPE \'!\'', [...], false)
+ 5 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Mahasiswa.php(41): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Mahasiswa->show('002')
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-12 13:28:42 --> mysqli_sql_exception: Unknown column 'mhsnobp' in 'where clause' in D:\Xampp 8.2\htdocs\ci4-apiserver\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\Xampp 8.2\htdocs\ci4-apiserver\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\Xampp 8.2\htdocs\ci4-apiserver\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\Xampp 8.2\htdocs\ci4-apiserver\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\Xampp 8.2\htdocs\ci4-apiserver\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\Xampp 8.2\htdocs\ci4-apiserver\system\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Xampp 8.2\htdocs\ci4-apiserver\app\Controllers\Mahasiswa.php(41): CodeIgniter\Model->__call('get', Array)
+#6 D:\Xampp 8.2\htdocs\ci4-apiserver\system\CodeIgniter.php(934): App\Controllers\Mahasiswa->show('001')
+#7 D:\Xampp 8.2\htdocs\ci4-apiserver\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+#8 D:\Xampp 8.2\htdocs\ci4-apiserver\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\Xampp 8.2\htdocs\ci4-apiserver\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-06-12 13:28:42 --> Unknown column 'mhsnobp' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `barang`
+WHERE `mhsnobp` LIKE \'%001%\' ESCAPE \'!\'
+OR  `mhsnama` LIKE \'%001%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `barang`
+WHERE `mhsnobp` LIKE \'%001%\' ESCAPE \'!\'
+OR  `mhsnama` LIKE \'%001%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `barang`
+WHERE `mhsnobp` LIKE \'%001%\' ESCAPE \'!\'
+OR  `mhsnama` LIKE \'%001%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `barang`
+WHERE `mhsnobp` LIKE :mhsnobp: ESCAPE \'!\'
+OR  `mhsnama` LIKE :mhsnama: ESCAPE \'!\'', [...], false)
+ 5 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Mahasiswa.php(41): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Mahasiswa->show('001')
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-12 13:28:46 --> mysqli_sql_exception: Unknown column 'mhsnobp' in 'where clause' in D:\Xampp 8.2\htdocs\ci4-apiserver\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\Xampp 8.2\htdocs\ci4-apiserver\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\Xampp 8.2\htdocs\ci4-apiserver\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\Xampp 8.2\htdocs\ci4-apiserver\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\Xampp 8.2\htdocs\ci4-apiserver\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\Xampp 8.2\htdocs\ci4-apiserver\system\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Xampp 8.2\htdocs\ci4-apiserver\app\Controllers\Mahasiswa.php(41): CodeIgniter\Model->__call('get', Array)
+#6 D:\Xampp 8.2\htdocs\ci4-apiserver\system\CodeIgniter.php(934): App\Controllers\Mahasiswa->show('B001')
+#7 D:\Xampp 8.2\htdocs\ci4-apiserver\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+#8 D:\Xampp 8.2\htdocs\ci4-apiserver\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\Xampp 8.2\htdocs\ci4-apiserver\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-06-12 13:28:46 --> Unknown column 'mhsnobp' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `barang`
+WHERE `mhsnobp` LIKE \'%B001%\' ESCAPE \'!\'
+OR  `mhsnama` LIKE \'%B001%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `barang`
+WHERE `mhsnobp` LIKE \'%B001%\' ESCAPE \'!\'
+OR  `mhsnama` LIKE \'%B001%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `barang`
+WHERE `mhsnobp` LIKE \'%B001%\' ESCAPE \'!\'
+OR  `mhsnama` LIKE \'%B001%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `barang`
+WHERE `mhsnobp` LIKE :mhsnobp: ESCAPE \'!\'
+OR  `mhsnama` LIKE :mhsnama: ESCAPE \'!\'', [...], false)
+ 5 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Mahasiswa.php(41): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Mahasiswa->show('B001')
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
